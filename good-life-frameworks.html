@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="vi">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Các framework sống tốt</title>
+<script src="https://cdn.jsdelivr.net/npm/@tannc26/docs-kit@0.5.0/doc.js"></script>
+<script type="application/json" id="doc-labels">{"toc": "Mục lục"}</script>
+<style>
+  .ev { display: inline-block; width: .6em; height: .6em; border-radius: 50%; margin: 0 .1em 0 .3em; vertical-align: .05em; cursor: help; }
+  .ev-high { background: var(--ok); }
+  .ev-mid { background: var(--warn); }
+  .ev-low { background: var(--bad); }
+  .ev-hyp { background: transparent; box-shadow: inset 0 0 0 1.5px var(--accent); }
+  .legend { color: var(--ink2); font-size: .95em; }
+  main h2.part { border-top: 2px solid var(--line); padding-top: 1.2rem; margin-top: 3rem; color: var(--accent); }
+  figure.pic { margin: 1.2rem 0; }
+  figure.pic img { display: block; max-width: 100%; max-height: 520px; margin: 0 auto; background: #fff; border-radius: 8px; border: 1px solid var(--line); }
+  figure.pic.big img { max-height: none; width: min(100%, 860px); }
+  figure.pic.pair > div { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; }
+  figure.pic.pair img { max-width: min(46%, 340px); margin: 0; }
+  figure.pic figcaption { color: var(--ink2); font-size: .9em; text-align: center; margin-top: .4rem; }
+  .src { color: var(--ink2); font-size: .9em; margin-top: -.4rem; }
+  .recall { border-left: 3px solid var(--accent); padding: .2rem 0 .2rem 1rem; margin: 2rem 0; }
+  dl.gloss dt { font-family: var(--sans); font-weight: 600; }
+  .refs li { margin: .35rem 0; overflow-wrap: anywhere; }
+  @media (max-width: 600px) { figure.pic.pair img { max-width: 100%; } }
+</style>
+
+<script type="text/markdown">
+# Các framework sống tốt
+
+Một **framework** là một bộ khung giúp mình nhìn cuộc sống theo một cách nhất định — giống cái khung tranh: tranh thì vẫn là đời mình, nhưng khung quyết định mình nhìn vào phần nào. Có khung chia hạnh phúc thành năm phần, có khung chia giờ đầu tiên buổi sáng thành ba khối hai mươi phút, có khung chỉ là một câu dặn "ăn tới tám phần no thì dừng". Tài liệu này giới thiệu những framework hay được nhắc tới nhất, xếp theo bốn chủ đề, và với mỗi cái: nó là gì, gồm những phần nào, một ví dụ đời thường, và cách thử.
+
+<p class="doc-meta">Viết ngày 26/10/2026 · Mỗi framework có một chấm màu nhỏ ở dòng cuối, cho biết đã được nghiên cứu kiểm chứng tới đâu: <span class="ev ev-high" title="Bằng chứng mạnh"></span> nhiều nghiên cứu ủng hộ · <span class="ev ev-mid" title="Bằng chứng vừa"></span> có bằng chứng nhưng chưa nhiều, hoặc chỉ đúng một phần · <span class="ev ev-low" title="Bằng chứng yếu hoặc đang tranh cãi"></span> chưa ai kiểm chứng, hoặc nghiên cứu không ủng hộ · <span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span> nhận xét của tài liệu này. Bấm vào chấm để xem nguồn.</p>
+
+<h2 id="topics"><span class="num">0</span>Bốn chủ đề</h2>
+
+| Chủ đề | Câu hỏi nó trả lời | Các framework |
+|---|---|---|
+| [Hạnh phúc và một cuộc sống tốt](#part-happiness) | Sống tốt gồm những gì? | Hedonic và eudaimonic · Ba nhu cầu nền · PERMA · Sáu chiều của Ryff · Tháp Maslow · Ikigai · 24 điểm mạnh tính cách · Bánh hạnh phúc 50/10/40 · Hedonic treadmill · Sáu yếu tố của World Happiness Report |
+| [Cảm xúc và tâm trí](#part-mind) | Đối xử với cảm xúc, suy nghĩ thế nào? | CBT · ACT · Mindfulness · Chủ nghĩa Khắc kỷ · Biết ơn · Làm việc tử tế · Cầu toàn |
+| [Mục tiêu, thói quen và cách làm việc](#part-goals) | Đạt mục tiêu và giữ thói quen bằng cách nào? | WOOP · Grit · Luật hấp dẫn · Power posing · Atomic Habits · 7 thói quen · GTD · Pomodoro · Bánh xe cuộc đời · Câu lạc bộ 5 giờ sáng |
+| [Sức khoẻ và sống thọ](#part-health) | Làm gì để sống lâu và khoẻ? | Life's Essential 8 · Năm thói quen sống thọ · Blue Zones và Power 9 · Hara hachi bu · Ăn kiểu Địa Trung Hải · Nghiên cứu Harvard · Già khoẻ theo WHO · Kết nối xã hội |
+
+<h2 id="part-happiness" class="part">Phần I — Hạnh phúc và một cuộc sống tốt</h2>
+
+<h2 id="hedonic-eudaimonic"><span class="num">1</span>Hai kiểu hạnh phúc: hedonic và eudaimonic</h2>
+
+**Nó là gì.** Cách chia hạnh phúc thành hai loại, có từ thời Hy Lạp cổ. **Hedonic** là hạnh phúc của niềm vui và sự thoả mãn: thấy dễ chịu, hài lòng. **Eudaimonic** là hạnh phúc của ý nghĩa và sự trưởng thành: sống đúng với mình, phát huy được khả năng của mình<a class="ev ev-mid" href="#r-ryan2001" title="Ryan 2001 · Bằng chứng vừa"></a>.
+
+**Ví dụ.** Một buổi tối ăn lẩu với bạn bè, cười nói vui vẻ — đó là hedonic. Một buổi chiều đạp xe chở mẹ đi khám bệnh, mệt nhưng thấy mình sống có ích — đó là eudaimonic. Một đời tốt thường cần cả hai.
+
+**Cách thử.** Cuối tuần, viết ra một việc khiến mình *vui* và một việc khiến mình thấy *có ý nghĩa*. Tuần nào thiếu hẳn một loại, tuần sau bù vào<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Một cách phân biệt được dùng rộng rãi; khi đo thật, hai loại chồng lên nhau khá nhiều<a class="ev ev-mid" href="#r-ryan2001" title="Ryan 2001 · Bằng chứng vừa"></a>.
+
+<h2 id="sdt"><span class="num">2</span>Ba nhu cầu nền (Self-Determination Theory)</h2>
+
+**Nó là gì.** Lý thuyết của hai nhà tâm lý học Ryan và Deci: ai cũng có ba nhu cầu tâm lý nền, đáp ứng đủ thì khoẻ mạnh, thiếu thì héo dần<a class="ev ev-mid" href="#r-ryan2000" title="Ryan 2000 · Bằng chứng vừa"></a>.
+
+- **Autonomy — tự chủ:** được tự chọn, làm việc vì mình muốn chứ không phải bị ép.
+- **Competence — năng lực:** thấy mình làm được và tiến bộ.
+- **Relatedness — gắn kết:** có người thân thiết, thấy mình thuộc về.
+
+**Ví dụ.** Đứa trẻ tập ăn đòi tự cầm thìa (tự chủ), vui ra mặt khi xúc được miếng cơm không rơi (năng lực), và ngồi giữa mâm cơm cả nhà, được bố mẹ khen (gắn kết). Người lớn cũng vậy, chỉ là thìa cơm đổi thành công việc, sở thích, gia đình.
+
+**Cách thử.** Cuối tuần chấm ba nhu cầu từ 1 tới 5. Chân kiềng nào ngắn nhất, tuần sau thêm đúng một việc cho chân ấy — một buổi cà phê với bạn cũ, một buổi tự chọn làm điều mình thích<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Gộp gần nửa triệu người, được đáp ứng ba nhu cầu đi kèm hài lòng với cuộc sống rõ rệt, ở cả phương Tây lẫn châu Á<a class="ev ev-high" href="#r-slemp2024" title="Slemp 2024 · Bằng chứng mạnh"></a>.
+
+<h2 id="perma"><span class="num">3</span>PERMA</h2>
+
+**Nó là gì.** Mô hình của Martin Seligman, người khởi xướng ngành tâm lý học tích cực: một cuộc sống tốt có năm thành phần, viết tắt là PERMA<a class="ev ev-mid" href="#r-butler2016" title="Butler 2016 · Bằng chứng vừa"></a>.
+
+- **P — Positive emotion:** cảm xúc tích cực — vui, bình an, biết ơn.
+- **E — Engagement:** đắm mình vào việc đang làm, quên cả thời gian.
+- **R — Relationships:** các mối quan hệ tốt.
+- **M — Meaning:** cảm giác mình thuộc về điều gì lớn hơn bản thân.
+- **A — Accomplishment:** đạt được điều mình đặt ra.
+
+**Ví dụ.** Một người thợ mộc: vui khi làm xong cái bàn đẹp (P), say sưa bào gỗ quên ăn (E), có bạn nghề để trò chuyện (R), thấy mình giữ một nghề truyền thống của làng (M), và tự hào khi khách quay lại đặt thêm (A).
+
+**Cách thử.** Chấm năm chữ cái từ 1 tới 10 cho tháng vừa qua; chữ nào thấp nhất là chỗ nên để ý<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Có bộ câu hỏi đo riêng<a class="ev ev-mid" href="#r-butler2016" title="Butler 2016 · Bằng chứng vừa"></a>; nhưng khi đo thật, điểm PERMA gần như trùng với mức hài lòng cuộc sống thông thường<a class="ev ev-mid" href="#r-goodman2018" title="Goodman 2018 · Bằng chứng vừa"></a>.
+
+<h2 id="ryff"><span class="num">4</span>Sáu chiều well-being của Ryff</h2>
+
+**Nó là gì.** Mô hình của nhà tâm lý học Carol Ryff, coi sống tốt là "vận hành tốt" về tâm lý, gồm sáu chiều<a class="ev ev-mid" href="#r-ryff1989" title="Ryff 1989 · Bằng chứng vừa"></a>:
+
+1. **Chấp nhận bản thân** — nhìn nhận cả điểm tốt lẫn điểm xấu của mình mà không ghét bỏ.
+2. **Quan hệ tích cực** — có những mối quan hệ ấm áp, tin cậy.
+3. **Tự chủ** — tự đánh giá mình theo chuẩn của mình, không chạy theo đám đông.
+4. **Làm chủ hoàn cảnh** — sắp xếp được cuộc sống hằng ngày.
+5. **Mục đích sống** — có hướng đi, thấy cuộc đời có ý nghĩa.
+6. **Phát triển bản thân** — thấy mình vẫn đang lớn lên.
+
+**Ví dụ.** Một bà cụ bán xôi đầu ngõ: biết mình không giỏi chữ nhưng chẳng tự ti (1), quý mến khách quen như người nhà (2), sống theo cách của mình dù con cái khuyên nghỉ (3), tự lo được gánh hàng (4), thấy nuôi các cháu ăn học là lẽ sống (5), và năm nào cũng học thêm một món mới (6).
+
+**Bằng chứng.** Được một khảo sát quốc gia ủng hộ<a class="ev ev-mid" href="#r-ryff1995" title="Ryff 1995 · Bằng chứng vừa"></a>, nhưng có nghiên cứu thấy bốn trong sáu chiều gần như đo cùng một thứ<a class="ev ev-mid" href="#r-springer2006" title="Springer 2006 · Bằng chứng vừa"></a>.
+
+<h2 id="maslow"><span class="num">5</span>Tháp nhu cầu Maslow</h2>
+
+**Nó là gì.** Ý tưởng của Abraham Maslow năm 1943: con người có năm tầng nhu cầu, từ thấp tới cao<a class="ev ev-low" href="#r-maslow1943" title="Maslow 1943 · Bằng chứng yếu hoặc đang tranh cãi"></a>:
+
+1. **Sinh lý** — ăn, uống, ngủ.
+2. **An toàn** — chỗ ở, việc làm ổn định, sức khoẻ.
+3. **Tình cảm và thuộc về** — gia đình, bạn bè, tình yêu.
+4. **Được tôn trọng** — được ghi nhận, tự tin.
+5. **Thể hiện bản thân** — sống hết khả năng của mình.
+
+Hình kim tự tháp quen thuộc là do người đời sau vẽ; Maslow chưa từng vẽ nó<a class="ev ev-mid" href="#r-bridgman2019" title="Bridgman 2019 · Bằng chứng vừa"></a>.
+
+**Ví dụ.** Một người vừa mất việc lo trước hết chuyện tiền nhà, tiền ăn (tầng 1–2), chưa nghĩ được tới chuyện học đàn cho vui (tầng 5).
+
+**Bằng chứng.** Các nhu cầu là có thật, nhưng thứ tự thì không cứng: khảo sát ở 123 nước thấy nhu cầu "cao" như được tôn trọng, có bạn bè vẫn quan trọng dù nhu cầu "thấp" chưa đủ<a class="ev ev-mid" href="#r-tay2011" title="Tay 2011 · Bằng chứng vừa"></a>. Chính Maslow cũng viết thứ tự ấy "không cứng nhắc như nghe có vẻ"<a class="ev ev-low" href="#r-maslow1943" title="Maslow 1943 · Bằng chứng yếu hoặc đang tranh cãi"></a>.
+
+<h2 id="ikigai"><span class="num">6</span>Ikigai</h2>
+
+**Nó là gì.** Có hai thứ cùng tên.
+
+- **Ikigai gốc của Nhật**: "lẽ sống" — điều khiến mình muốn thức dậy mỗi sáng. Có thể rất nhỏ: chăm vườn rau, đón cháu đi học, pha ấm trà buổi sáng.
+- **Sơ đồ bốn vòng tròn** lan khắp mạng: điều mình yêu thích, điều mình giỏi, điều thế giới cần, và điều được trả tiền — chỗ bốn vòng giao nhau gọi là "ikigai". Sơ đồ này do một blogger phương Tây vẽ năm 2014, chuyển thể từ một sơ đồ về "mục đích sống"<a class="ev ev-low" href="#r-winn2014" title="Winn 2014 · Bằng chứng yếu hoặc đang tranh cãi"></a>.
+
+**Ví dụ.** Ông cụ về hưu ngày nào cũng ra công viên tập dưỡng sinh với hội bạn già, rồi về tưới cây — ông có ikigai theo nghĩa Nhật, dù chẳng được ai trả tiền.
+
+**Cách thử.** Hỏi mình: *sáng mai thức dậy, mình mong tới điều gì?* Nếu khó trả lời, đó là chỗ đáng chú ý<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Ikigai gốc: người Nhật nói mình không có ikigai có nguy cơ tử vong cao hơn khoảng 1,5 lần (nghiên cứu theo dõi)<a class="ev ev-mid" href="#r-sone2008" title="Sone 2008 · Bằng chứng vừa"></a>. Sơ đồ bốn vòng tròn: chưa ai kiểm chứng<a class="ev ev-low" href="#r-winn2014" title="Winn 2014 · Bằng chứng yếu hoặc đang tranh cãi"></a>.
+
+<h2 id="via"><span class="num">7</span>24 điểm mạnh tính cách (VIA)</h2>
+
+**Nó là gì.** Bảng phân loại của Peterson và Seligman: 24 điểm mạnh tính cách, xếp vào sáu đức tính lớn — **trí tuệ, can đảm, nhân ái, công bằng, tiết chế, và siêu việt** (hướng tới điều lớn hơn bản thân)<a class="ev ev-mid" href="#r-peterson2004" title="Peterson 2004 · Bằng chứng vừa"></a>. Ví dụ điểm mạnh: tò mò, kiên trì, tử tế, biết ơn, hài hước, khiêm tốn.
+
+**Ví dụ.** Một người có điểm mạnh là "tò mò" sẽ thấy vui khi được hỏi chuyện, đọc sách, thử món mới; một người mạnh về "tử tế" thấy vui khi chăm sóc người khác.
+
+**Cách thử.** Làm bài trắc nghiệm VIA miễn phí trên mạng, chọn một điểm mạnh nổi bật, và mỗi ngày dùng nó theo một cách mới trong một tuần<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Cách xếp vào sáu đức tính chưa được xác nhận rõ<a class="ev ev-mid" href="#r-peterson2004" title="Peterson 2004 · Bằng chứng vừa"></a>; dùng điểm mạnh của mình giúp hài lòng hơn một chút<a class="ev ev-mid" href="#r-schutte2019" title="Schutte 2019 · Bằng chứng vừa"></a>.
+
+<h2 id="happiness-pie"><span class="num">8</span>Bánh hạnh phúc 50/10/40</h2>
+
+**Nó là gì.** Hình chiếc bánh chia hạnh phúc: khoảng 50% do gene, 10% do hoàn cảnh (giàu nghèo, ở đâu), và 40% do những gì mình chủ động làm hằng ngày<a class="ev ev-low" href="#r-lyubomirsky2005" title="Lyubomirsky 2005 · Bằng chứng yếu hoặc đang tranh cãi"></a>. Thông điệp: phần lớn hạnh phúc nằm trong tay bạn.
+
+**Ví dụ.** Theo chiếc bánh, trúng xổ số (hoàn cảnh) chỉ đổi được một chút, còn tập thói quen tốt (hành động) đổi được nhiều.
+
+**Bằng chứng.** Con số 40% gần như không có cơ sở, và chính các tác giả đã thừa nhận nhiều điểm bị phê bình<a class="ev ev-mid" href="#r-brown2020" title="Brown 2020 · Bằng chứng vừa"></a>. Hành động hằng ngày vẫn giúp được, nhưng ít hơn chiếc bánh hứa<a class="ev ev-high" href="#r-white2019" title="White 2019 · Bằng chứng mạnh"></a>.
+
+<h2 id="hedonic-treadmill"><span class="num">9</span>Hedonic treadmill — "sướng mấy rồi cũng quen"</h2>
+
+**Nó là gì.** Ý tưởng rằng sau mỗi chuyện vui hay buồn lớn, con người dần quay về mức hạnh phúc cũ, như chạy trên máy chạy bộ: chạy mãi mà vẫn ở chỗ cũ<a class="ev ev-low" href="#r-brickman1978" title="Brickman 1978 · Bằng chứng yếu hoặc đang tranh cãi"></a>.
+
+**Ví dụ.** Mua chiếc xe máy mới, tuần đầu ngày nào cũng lau, tháng thứ ba thì nó chỉ còn là cái xe để đi làm.
+
+**Bằng chứng.** Đúng một phần: người ta quen dần với nhiều thay đổi<a class="ev ev-mid" href="#r-diener2006" title="Diener 2006 · Bằng chứng vừa"></a>, nhưng không phải tất cả — những biến cố như khuyết tật lâu dài để lại mức hạnh phúc thấp hơn kéo dài<a class="ev ev-high" href="#r-lucas2007" title="Lucas 2007 · Bằng chứng mạnh"></a>, và mức độ quen khác nhau nhiều theo từng loại sự kiện<a class="ev ev-high" href="#r-luhmann2012" title="Luhmann 2012 · Bằng chứng mạnh"></a>.
+
+<h2 id="whr"><span class="num">10</span>Sáu yếu tố của World Happiness Report</h2>
+
+**Nó là gì.** Báo cáo hạnh phúc thế giới hằng năm xếp hạng các nước theo mức hài lòng với cuộc sống của người dân, rồi tìm xem điều gì đi kèm với nó. Sáu yếu tố: **có người để dựa vào lúc khó khăn, thu nhập, tuổi thọ khoẻ mạnh, tự do lựa chọn cuộc sống, lòng hào phóng, và ít tham nhũng**<a class="ev ev-high" href="#r-worldhappinessreport" title="World Happiness Report · Bằng chứng mạnh"></a>.
+
+**Ví dụ.** Hai nước có thu nhập ngang nhau, nhưng nước nào người dân tin rằng "lúc hoạn nạn có người giúp" thì thường hạnh phúc hơn.
+
+**Bằng chứng.** Sáu yếu tố giải thích phần lớn chênh lệch giữa các nước, nhưng đó là tương quan<a class="ev ev-high" href="#r-worldhappinessreport" title="World Happiness Report · Bằng chứng mạnh"></a>. Ở cấp từng người, những thứ như thu nhập hay tình trạng hôn nhân lại ảnh hưởng ít tới bất ngờ<a class="ev ev-mid" href="#r-diener1999" title="Diener 1999 · Bằng chứng vừa"></a>.
+
+<h2 id="part-mind" class="part">Phần II — Cảm xúc và tâm trí</h2>
+
+<h2 id="cbt"><span class="num">11</span>CBT — liệu pháp nhận thức – hành vi</h2>
+
+**Nó là gì.** Một phương pháp trị liệu dựa trên ý tưởng: **suy nghĩ, cảm xúc và hành vi kéo nhau**. Không phải chuyện xảy ra làm mình buồn, mà cách mình *nghĩ* về chuyện ấy. Sửa được lối nghĩ méo mó thì cảm xúc và hành vi cũng đổi theo<a class="ev ev-high" href="#r-hofmann2012" title="Hofmann 2012 · Bằng chứng mạnh"></a>.
+
+**Ví dụ.** Nhắn tin cho bạn thân cả ngày không thấy trả lời. Suy nghĩ: "chắc nó giận mình". Cảm xúc: lo, buồn. Hành vi: không dám nhắn tiếp. CBT dạy hỏi lại: *bằng chứng đâu? còn cách giải thích nào khác — bạn bận, bạn quên?*
+
+**Cách thử.** Khi một suy nghĩ làm mình khó chịu cả buổi, viết nó ra giấy, rồi viết: bằng chứng ủng hộ, bằng chứng chống lại, và một người bạn sẽ nhìn chuyện này thế nào<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Một tổng quan gộp hơn 100 meta-analysis gọi bằng chứng cho CBT là "rất mạnh", nhất là với lo âu<a class="ev ev-high" href="#r-hofmann2012" title="Hofmann 2012 · Bằng chứng mạnh"></a>.
+
+<h2 id="act"><span class="num">12</span>ACT — liệu pháp chấp nhận và cam kết</h2>
+
+**Nó là gì.** Một phương pháp trị liệu không cố xoá cảm xúc khó chịu mà **dạy sống chung với nó**: để cảm xúc ở đó, không vật lộn, rồi vẫn làm điều mình coi trọng. Hai chữ chính là *Acceptance* (chấp nhận) và *Commitment* (cam kết làm theo giá trị của mình).
+
+**Ví dụ.** Run khi phải phát biểu trong đám cưới bạn thân. Thay vì cố "hết run" rồi mới nói, ACT bảo: cứ run, tay cứ lạnh — vẫn cầm micro lên nói, vì mình quý bạn mình.
+
+**Cách thử.** Khi một nỗi sợ cản mình, nói thầm "mình đang có cảm giác sợ", rồi hỏi "điều mình coi trọng ở đây là gì?" và làm một bước nhỏ theo hướng đó<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Hiệu quả rõ rệt, ngang CBT, trong các nghiên cứu lâm sàng<a class="ev ev-high" href="#r-atjak2015" title="A-Tjak 2015 · Bằng chứng mạnh"></a>.
+
+<h2 id="mindfulness"><span class="num">13</span>Mindfulness — chánh niệm</h2>
+
+**Nó là gì.** Tập trung chú ý vào hiện tại — hơi thở, cơ thể, việc đang làm — và nhận biết những gì đang diễn ra mà không vội phán xét. Có nguồn gốc từ thiền Phật giáo; các chương trình hiện đại thường kéo dài tám tuần.
+
+**Ví dụ.** Rửa bát mà để ý cảm giác nước ấm trên tay, tiếng bát đĩa, thay vì vừa rửa vừa nghĩ chuyện ngày mai.
+
+**Cách thử.** Mỗi ngày năm phút ngồi yên, đếm hơi thở từ 1 tới 10 rồi lặp lại; lạc đi thì nhẹ nhàng đếm lại từ 1<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Với người có rối loạn tâm lý, hiệu quả ngang các phương pháp điều trị đã được công nhận<a class="ev ev-high" href="#r-goldberg2018" title="Goldberg 2018 · Bằng chứng mạnh"></a>; với người khoẻ mạnh, tốt hơn không làm gì nhưng không hơn các hoạt động có chủ đích khác<a class="ev ev-high" href="#r-galante2021" title="Galante 2021 · Bằng chứng mạnh"></a>.
+
+<h2 id="stoicism"><span class="num">14</span>Chủ nghĩa Khắc kỷ (Stoicism)</h2>
+
+**Nó là gì.** Một trường phái triết học Hy Lạp – La Mã cổ đại. Ý chính, từ Epictetus: **chia mọi chuyện làm hai phần — phần mình kiểm soát được và phần không**. Dồn sức vào phần thứ nhất, bình thản với phần thứ hai.
+
+**Ví dụ.** Chuyến xe về quê ăn Tết bị huỷ vì bão: chuyện thời tiết không đổi được, nên đừng bực mãi; chuyện tìm chuyến khác, báo cho bố mẹ, thì làm được ngay.
+
+**Cách thử.** Gặp chuyện bực, kẻ hai cột trên giấy: "đổi được" và "không đổi được". Chỉ hành động ở cột đầu<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Mới có vài thử nghiệm nhỏ, kết quả trái chiều<a class="ev ev-low" href="#r-boostani2026" title="Boostani 2026 · Bằng chứng yếu hoặc đang tranh cãi"></a>. Hiểu sai Khắc kỷ thành "kìm nén cảm xúc" thì còn đi kèm kém hạnh phúc hơn<a class="ev ev-mid" href="#r-karl2022" title="Karl 2022 · Bằng chứng vừa"></a>.
+
+<h2 id="gratitude"><span class="num">15</span>Biết ơn (gratitude practice)</h2>
+
+**Nó là gì.** Những bài tập để chủ động để ý điều tốt mình nhận được: viết ra ba điều biết ơn mỗi tối, hoặc viết thư cảm ơn một người.
+
+**Ví dụ.** Tối nay ghi: mẹ gọi điện hỏi thăm; trời tạnh mưa đúng lúc đi về; bà bán xôi cho thêm muỗng ruốc.
+
+**Cách thử.** Một tuần, mỗi tối ghi ba điều, rồi để ý tâm trạng cuối tuần<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Tốt hơn không làm gì, chỉ nhỉnh hơn một chút so với hoạt động trung tính<a class="ev ev-high" href="#r-davis2016" title="Davis 2016 · Bằng chứng mạnh"></a>, và không hơn các bài tập tích cực khác<a class="ev ev-high" href="#r-dickens2017" title="Dickens 2017 · Bằng chứng mạnh"></a>.
+
+<h2 id="kindness"><span class="num">16</span>Làm việc tử tế</h2>
+
+**Nó là gì.** Chủ động làm điều tốt cho người khác, và để ý rằng chính mình cũng vui hơn.
+
+**Ví dụ.** Chở mẹ đi chợ, xách giúp bà cụ hàng xóm bao gạo lên tầng ba, nhường ghế trên xe buýt.
+
+**Cách thử.** Một ngày trong tuần, làm năm việc tử tế nhỏ, và ghi lại cảm giác cuối ngày<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Giúp người khác làm chính người giúp vui hơn, hiệu ứng vừa phải và chắc chắn<a class="ev ev-high" href="#r-curry2018" title="Curry 2018 · Bằng chứng mạnh"></a>.
+
+<h2 id="perfectionism"><span class="num">17</span>Cầu toàn (perfectionism)</h2>
+
+**Nó là gì.** Không phải một phương pháp mà là một **nét tính cách** hay bị nhầm là điều tốt. Tâm lý học chia làm hai phần: **perfectionistic strivings** — đặt chuẩn rất cao cho mình, và **perfectionistic concerns** — sợ mắc lỗi, sợ bị đánh giá<a class="ev ev-high" href="#r-limburg2017" title="Limburg 2017 · Bằng chứng mạnh"></a>.
+
+**Ví dụ.** Dọn nhà đón Tết mà lau đi lau lại một góc, tới ba mươi Tết vẫn chưa xong; viết lời chúc mừng sinh nhật mà sửa mãi không dám gửi.
+
+**Cách thử.** Khi thấy mình sửa đi sửa lại, hỏi: *nếu dừng ở đây, có ai thật sự bị thiệt không?* Thử dừng ở mức "đủ tốt" một lần<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Gộp 284 nghiên cứu, cả hai phần đều gắn với nhiều vấn đề sức khoẻ tinh thần<a class="ev ev-high" href="#r-limburg2017" title="Limburg 2017 · Bằng chứng mạnh"></a>; mức cầu toàn ở sinh viên Mỹ, Canada, Anh tăng đều từ 1989 tới 2016<a class="ev ev-high" href="#r-curran2019" title="Curran 2019 · Bằng chứng mạnh"></a>.
+
+<h2 id="part-goals" class="part">Phần III — Mục tiêu, thói quen và cách làm việc</h2>
+
+<h2 id="woop"><span class="num">18</span>WOOP</h2>
+
+**Nó là gì.** Phương pháp bốn bước của nhà tâm lý học Gabriele Oettingen, tên đầy đủ là *mental contrasting with implementation intentions*<a class="ev ev-high" href="#r-wang2021" title="Wang 2021 · Bằng chứng mạnh"></a>:
+
+- **W — Wish:** điều mình mong muốn.
+- **O — Outcome:** kết quả tốt nhất nếu đạt được — hình dung thật rõ.
+- **O — Obstacle:** trở ngại **trong chính mình** — không phải ngoài kia.
+- **P — Plan:** kế hoạch "nếu gặp trở ngại ấy, thì mình sẽ…".
+
+**Ví dụ.** Mong: chạy bộ ba buổi mỗi tuần. Kết quả: người nhẹ nhõm, ngủ ngon. Trở ngại: tối về nằm xuống là lười. Kế hoạch: "nếu về tới nhà thấy muốn nằm, thì mình thay ngay đồ chạy trước khi ngồi xuống".
+
+**Cách thử.** Áp dụng bốn bước cho một mong muốn của tuần này, mất chừng năm phút<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Giúp đạt mục tiêu tốt hơn, hiệu ứng nhỏ tới vừa<a class="ev ev-high" href="#r-wang2021" title="Wang 2021 · Bằng chứng mạnh"></a>.
+
+<h2 id="grit"><span class="num">19</span>Grit — sự bền bỉ</h2>
+
+**Nó là gì.** Khái niệm của Angela Duckworth: **đam mê và kiên trì với mục tiêu dài hạn**. Người có grit cao không bỏ cuộc giữa chừng và theo đuổi một mục tiêu nhiều năm<a class="ev ev-mid" href="#r-duckworth2007" title="Duckworth 2007 · Bằng chứng vừa"></a>.
+
+**Ví dụ.** Một người học đàn tranh mười năm, có lúc chán, có lúc bận, nhưng chưa bao giờ bỏ hẳn.
+
+**Bằng chứng.** Có giúp nhưng ít hơn quảng cáo, và gần như trùng với tính tận tâm, chu đáo vốn đã được đo từ lâu; phần có ích nhất là kiên trì, không phải đam mê<a class="ev ev-high" href="#r-cred2017" title="Credé 2017 · Bằng chứng mạnh"></a>.
+
+<h2 id="law-of-attraction"><span class="num">20</span>Luật hấp dẫn (law of attraction)</h2>
+
+**Nó là gì.** Niềm tin rằng suy nghĩ "hút" điều tương tự về phía mình: cứ tưởng tượng thật rõ mình đã giàu, đã khoẻ, đã đỗ, thì điều ấy sẽ đến. Nổi tiếng qua cuốn sách *The Secret*, còn gọi là "manifesting".
+
+**Ví dụ.** Dán ảnh căn nhà mơ ước lên tường, mỗi sáng nhìn và tin rằng "mình đã có nó".
+
+**Bằng chứng.** Phần "hút điều tốt" chưa ai kiểm chứng<a class="ev ev-low" href="#r-dixon2023" title="Dixon 2023 · Bằng chứng yếu hoặc đang tranh cãi"></a>. Ngược lại, nghiên cứu thấy mơ mộng về đích khiến người ta *bớt* cố gắng<a class="ev ev-mid" href="#r-oettingen2002" title="Oettingen 2002 · Bằng chứng vừa"></a> và hụt năng lượng<a class="ev ev-mid" href="#r-kappes2011" title="Kappes 2011 · Bằng chứng vừa"></a> — vì não đã được "thưởng" trước.
+
+<h2 id="power-posing"><span class="num">21</span>Power posing — tư thế quyền lực</h2>
+
+**Nó là gì.** Ý tưởng rằng đứng hai phút trong tư thế dang rộng — chống nạnh, giơ hai tay — trước một tình huống căng thẳng sẽ làm mình tự tin hơn, thậm chí thay đổi hormone<a class="ev ev-low" href="#r-carney2010" title="Carney 2010 · Bằng chứng yếu hoặc đang tranh cãi"></a>.
+
+**Ví dụ.** Vào nhà vệ sinh đứng chống nạnh hai phút trước buổi thi vấn đáp.
+
+**Bằng chứng.** Thử nghiệm lặp lại với mẫu lớn không thấy tác dụng lên hormone hay hành vi<a class="ev ev-mid" href="#r-ranehill2015" title="Ranehill 2015 · Bằng chứng vừa"></a>; chỉ còn lại cảm giác "thấy mạnh mẽ hơn" một chút, và chính tác giả đầu bài gốc không còn tin vào hiệu ứng<a class="ev ev-high" href="#r-carney2016" title="Carney 2016 · Bằng chứng mạnh"></a>.
+
+<h2 id="atomic-habits"><span class="num">22</span>Atomic Habits</h2>
+
+**Nó là gì.** Cuốn sách của James Clear về tạo thói quen, với **bốn quy tắc**: làm cho thói quen *dễ thấy*, *hấp dẫn*, *dễ làm*, và *thoả mãn*. Làm ngược lại để bỏ thói quen xấu: *khó thấy, kém hấp dẫn, khó làm, không thoả mãn*<a class="ev ev-low" href="#r-clear2018" title="Clear 2018 · Bằng chứng yếu hoặc đang tranh cãi"></a>.
+
+**Ví dụ.** Muốn uống nhiều nước: để bình nước ngay cạnh giường (dễ thấy), mua cái bình mình thích (hấp dẫn), rót sẵn từ tối (dễ làm), uống xong đánh dấu vào lịch (thoả mãn).
+
+**Cách thử.** Chọn một thói quen, áp đủ bốn quy tắc, giữ trong một tháng<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Không tìm thấy nghiên cứu nào kiểm tra chính bộ bốn quy tắc<a class="ev ev-low" href="#r-clear2018" title="Clear 2018 · Bằng chứng yếu hoặc đang tranh cãi"></a>; còn khoa học về thói quen mà sách dựa vào thì có thật — một thói quen mất trung bình khoảng hai tháng mới thành nếp, và lỡ một ngày không sao<a class="ev ev-high" href="#r-lally2010" title="Lally 2010 · Bằng chứng mạnh"></a>.
+
+<h2 id="seven-habits"><span class="num">23</span>7 thói quen để thành đạt</h2>
+
+**Nó là gì.** Cuốn sách của Stephen Covey (1989), một trong những sách tự lực bán chạy nhất mọi thời<a class="ev ev-low" href="#r-covey1989" title="Covey 1989 · Bằng chứng yếu hoặc đang tranh cãi"></a>. Bảy thói quen:
+
+1. **Chủ động** — tự chịu trách nhiệm, không đổ lỗi hoàn cảnh.
+2. **Bắt đầu với đích đến trong đầu** — biết mình muốn gì.
+3. **Việc quan trọng làm trước.**
+4. **Tư duy cùng thắng** — tìm cách để cả hai bên đều có lợi.
+5. **Hiểu người trước, rồi mới mong được hiểu.**
+6. **Hợp lực** — làm cùng nhau tốt hơn cộng từng người.
+7. **Mài giũa cái cưa** — chăm sóc bản thân để còn sức đi tiếp.
+
+**Ví dụ.** Thói quen thứ năm khi bố mẹ phàn nàn: nghe cho hết vì sao bố mẹ lo, trước khi giải thích ý mình.
+
+**Bằng chứng.** Không tìm thấy nghiên cứu nào kiểm tra bộ bảy thói quen ở người lớn<a class="ev ev-low" href="#r-covey1989" title="Covey 1989 · Bằng chứng yếu hoặc đang tranh cãi"></a>.
+
+<h2 id="gtd"><span class="num">24</span>GTD — Getting Things Done</h2>
+
+**Nó là gì.** Hệ thống sắp xếp việc của David Allen, gồm năm bước<a class="ev ev-low" href="#r-heylighen2008" title="Heylighen 2008 · Bằng chứng yếu hoặc đang tranh cãi"></a>:
+
+1. **Gom** — ghi mọi việc đang lởn vởn trong đầu ra một chỗ.
+2. **Làm rõ** — mỗi việc: có cần làm không, bước tiếp theo là gì.
+3. **Sắp xếp** — xếp vào danh sách theo nơi chốn, thời gian.
+4. **Xem lại** — mỗi tuần nhìn lại toàn bộ.
+5. **Làm** — chọn việc theo hoàn cảnh lúc đó.
+
+Kèm một quy tắc nổi tiếng: việc gì làm dưới hai phút thì làm ngay.
+
+**Ví dụ.** Cuối tuần ghi ra giấy: sửa vòi nước, gọi điện cho bà, đóng tiền điện, mua quà sinh nhật em. "Gọi điện cho bà" — bước tiếp theo là gì? Tối Chủ nhật bấm máy.
+
+**Bằng chứng.** Chưa được kiểm chứng như một hệ thống<a class="ev ev-low" href="#r-heylighen2008" title="Heylighen 2008 · Bằng chứng yếu hoặc đang tranh cãi"></a>. Một cơ chế bên trong có thật: viết ra kế hoạch cụ thể cho một việc còn dở giúp đầu óc thôi bị nó lởn vởn<a class="ev ev-mid" href="#r-masicampo2011" title="Masicampo 2011 · Bằng chứng vừa"></a>.
+
+<h2 id="pomodoro"><span class="num">25</span>Pomodoro</h2>
+
+**Nó là gì.** Cách chia thời gian: **làm tập trung 25 phút, nghỉ 5 phút**; sau bốn lượt thì nghỉ dài hơn. Tên lấy từ cái đồng hồ hẹn giờ hình quả cà chua.
+
+**Ví dụ.** Ôn thi: hẹn giờ 25 phút, cất điện thoại, chỉ làm bài; chuông reo thì đứng dậy rót nước, vươn vai năm phút.
+
+**Bằng chứng.** Hai nghiên cứu nhỏ cho kết quả khác nhau về độ mệt và tâm trạng<a class="ev ev-mid" href="#r-biwer2023" title="Biwer 2023 · Bằng chứng vừa"></a>; chưa thấy giúp làm được nhiều việc hơn<a class="ev ev-mid" href="#r-smits2025" title="Smits 2025 · Bằng chứng vừa"></a>.
+
+<h2 id="wheel-of-life"><span class="num">26</span>Bánh xe cuộc đời (Wheel of Life)</h2>
+
+**Nó là gì.** Một công cụ hay dùng trong coaching: vẽ một vòng tròn chia làm nhiều mảng — tuỳ phiên bản, thường là sức khoẻ, gia đình, bạn bè, tình yêu, công việc, tiền bạc, phát triển bản thân, giải trí — rồi chấm mỗi mảng từ 1 tới 10. Nối các điểm lại sẽ thấy "bánh xe" của mình méo ở đâu.
+
+**Ví dụ.** Chấm xong thấy "tiền bạc" 8 điểm nhưng "bạn bè" chỉ 3 — bánh xe lệch hẳn một bên.
+
+**Bằng chứng.** Chưa có nghiên cứu xác nhận cách đo này<a class="ev ev-low" href="#r-elrouby2026" title="Elrouby 2026 · Bằng chứng yếu hoặc đang tranh cãi"></a>.
+
+<h2 id="five-am"><span class="num">27</span>Câu lạc bộ 5 giờ sáng (5 AM Club)</h2>
+
+**Nó là gì.** Cuốn sách của Robin Sharma khuyên dậy lúc 5 giờ và dùng giờ đầu tiên theo công thức **20/20/20**: 20 phút vận động, 20 phút suy ngẫm, 20 phút học điều mới.
+
+**Ví dụ.** Dậy 5 giờ, chạy bộ quanh hồ, ngồi viết nhật ký, rồi đọc sách trước khi cả nhà thức.
+
+**Bằng chứng.** Chưa ai kiểm chứng chính con số 5 giờ<a class="ev ev-mid" href="#r-daghlas2021" title="Daghlas 2021 · Bằng chứng vừa"></a>. Điều có bằng chứng là ngủ đủ và đều: một thử nghiệm nhỏ dời lịch ngủ của người hay thức khuya sớm lên mà không cắt giấc ngủ thấy họ đỡ căng thẳng<a class="ev ev-mid" href="#r-facerchilds2019" title="Facer-Childs 2019 · Bằng chứng vừa"></a>, còn sống lệch đồng hồ sinh học của mình đi kèm cân nặng cao hơn<a class="ev ev-mid" href="#r-roenneberg2012" title="Roenneberg 2012 · Bằng chứng vừa"></a>.
+
+<h2 id="part-health" class="part">Phần IV — Sức khoẻ và sống thọ</h2>
+
+<h2 id="le8"><span class="num">28</span>Life's Essential 8</h2>
+
+**Nó là gì.** Bộ tám chỉ số sức khoẻ tim mạch của Hiệp hội Tim mạch Hoa Kỳ, mỗi chỉ số chấm từ 0 tới 100 rồi lấy trung bình<a class="ev ev-high" href="#r-ahalifesessential82022" title="AHA Life&#x27;s Essential 8 (2022) · Bằng chứng mạnh"></a>:
+
+| Bốn thói quen | Bốn chỉ số trong cơ thể |
+|---|---|
+| Ăn uống | Cân nặng (BMI) |
+| Vận động | Mỡ máu |
+| Không hút thuốc | Đường huyết |
+| Giấc ngủ | Huyết áp |
+
+**Ví dụ.** Một người ăn uống lành mạnh, ngủ đủ, không hút thuốc nhưng huyết áp cao — điểm chung bị kéo xuống, và chỗ cần lo là huyết áp.
+
+**Cách thử.** Ở lần khám sức khoẻ tới, xin kết quả mỡ máu, đường huyết, huyết áp, rồi tự đối chiếu với tám ô<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Người có điểm cao ở tuổi 50 sống lâu hơn khoảng 9 năm<a class="ev ev-high" href="#r-ma2023" title="Ma 2023 · Bằng chứng mạnh"></a> và có thêm nhiều năm không mắc bệnh tim, tiểu đường hay ung thư<a class="ev ev-high" href="#r-wang2023" title="Wang 2023 · Bằng chứng mạnh"></a>.
+
+<h2 id="five-habits"><span class="num">29</span>Năm thói quen sống thọ</h2>
+
+**Nó là gì.** Năm thói quen mà một nghiên cứu lớn ở Mỹ dùng để đo lối sống lành mạnh: **không hút thuốc · cân nặng vừa phải · vận động mỗi ngày từ 30 phút · ăn uống lành mạnh · hạn chế rượu bia**<a class="ev ev-high" href="#r-li2018" title="Li 2018 · Bằng chứng mạnh"></a>.
+
+**Ví dụ.** Hai anh em sinh đôi: người giữ đủ năm thói quen, người không giữ thói quen nào. Theo nghiên cứu, khoảng cách tuổi thọ của họ ở tuổi 50 có thể tới hơn một chục năm.
+
+**Bằng chứng.** Người giữ đủ năm thói quen sống thêm 12–14 năm so với người không giữ thói quen nào<a class="ev ev-high" href="#r-li2018" title="Li 2018 · Bằng chứng mạnh"></a>, phần lớn là những năm khoẻ mạnh<a class="ev ev-high" href="#r-li2020" title="Li 2020 · Bằng chứng mạnh"></a>; gộp 142 nghiên cứu, lối sống lành mạnh nhất đi kèm nguy cơ tử vong thấp hơn khoảng 55%<a class="ev ev-high" href="#r-zhang2020" title="Zhang 2020 · Bằng chứng mạnh"></a>. Danh sách gốc tính "uống rượu vừa phải" là tốt, nhưng khi đã hiệu chỉnh sai lệch, rượu vừa phải không còn đi kèm lợi ích<a class="ev ev-high" href="#r-zhao2023" title="Zhao 2023 · Bằng chứng mạnh"></a>.
+
+<h2 id="blue-zones"><span class="num">30</span>Blue Zones và Power 9</h2>
+
+**Nó là gì.** "Blue Zones" là những vùng có nhiều người sống trên trăm tuổi một cách bất thường — ban đầu là một vùng núi ở Sardinia (Ý)<a class="ev ev-mid" href="#r-poulain2004" title="Poulain 2004 · Bằng chứng vừa"></a>, sau mở rộng thành bốn vùng: Sardinia, Okinawa (Nhật), Nicoya (Costa Rica), Ikaria (Hy Lạp)<a class="ev ev-mid" href="#r-poulain2013" title="Poulain 2013 · Bằng chứng vừa"></a>. Từ đó, nhà báo Dan Buettner rút ra **Power 9** — chín thói quen chung<a class="ev ev-low" href="#r-buettner2016" title="Buettner 2016 · Bằng chứng yếu hoặc đang tranh cãi"></a>:
+
+1. Vận động tự nhiên trong ngày (làm vườn, đi bộ), không cần phòng tập.
+2. Có mục đích sống.
+3. Có cách xả căng thẳng mỗi ngày.
+4. Ăn tới tám phần no thì dừng.
+5. Ăn nhiều rau, đậu.
+6. Uống một chút rượu vang cùng bạn bè.
+7. Thuộc về một cộng đồng tín ngưỡng.
+8. Đặt gia đình lên trước.
+9. Chơi với những người có lối sống lành mạnh.
+
+**Ví dụ.** Rất giống một làng quê Việt ngày xưa: ông bà làm vườn đến già, ăn cơm rau, chiều chiều ngồi chơi với hàng xóm, con cháu quây quần.
+
+**Bằng chứng.** Một số vùng sống thọ có thật, nhưng chưa ai chứng minh vì sao<a class="ev ev-mid" href="#r-candalpedreira2025" title="Candal-Pedreira 2025 · Bằng chứng vừa"></a>. Danh sách Power 9 không đến từ một nghiên cứu được kiểm định<a class="ev ev-low" href="#r-buettner2016" title="Buettner 2016 · Bằng chứng yếu hoặc đang tranh cãi"></a>, và mục rượu vang không được ủng hộ khi đã hiệu chỉnh sai lệch<a class="ev ev-high" href="#r-zhao2023" title="Zhao 2023 · Bằng chứng mạnh"></a>.
+
+<h2 id="hara-hachi-bu"><span class="num">31</span>Hara hachi bu — ăn tám phần no</h2>
+
+**Nó là gì.** Một câu dặn truyền thống ở Okinawa: **ăn tới khi no khoảng 80% thì dừng đũa**.
+
+**Ví dụ.** Bữa cỗ ngon, còn muốn ăn thêm một bát — nhưng dừng, uống cốc nước, mười lăm phút sau sẽ thấy vừa đủ.
+
+**Bằng chứng.** Người Okinawa thế hệ trước ăn ít calo hơn nhu cầu một chút<a class="ev ev-mid" href="#r-willcox2007" title="Willcox 2007 · Bằng chứng vừa"></a>; còn bản thân câu dặn "tám phần no" chỉ được ghi nhận như một tập quán, chưa ai kiểm chứng riêng. Lợi thế tuổi thọ của Okinawa thuộc về thế hệ trước chiến tranh và đã mất dần<a class="ev ev-mid" href="#r-poulain2024" title="Poulain 2024 · Bằng chứng vừa"></a>.
+
+<h2 id="mediterranean"><span class="num">32</span>Ăn kiểu Địa Trung Hải</h2>
+
+**Nó là gì.** Cách ăn truyền thống của các nước quanh Địa Trung Hải: **nhiều rau, trái cây, đậu, ngũ cốc nguyên hạt, các loại hạt, cá; dầu ô liu là chất béo chính; ít thịt đỏ và đồ chế biến sẵn**.
+
+**Ví dụ.** Phiên bản Việt dễ làm: mâm cơm nhiều rau luộc, đậu phụ, cá kho, ít thịt mỡ, ít xúc xích.
+
+**Bằng chứng.** Thử nghiệm nổi tiếng nhất, PREDIMED, từng bị rút năm 2018 rồi đăng lại, vẫn cho thấy ít biến cố tim mạch hơn<a class="ev ev-mid" href="#r-estruch2018" title="Estruch 2018 · Bằng chứng vừa"></a>; tổng quan Cochrane đánh giá bằng chứng ở mức thấp tới trung bình<a class="ev ev-high" href="#r-rees2019" title="Rees 2019 · Bằng chứng mạnh"></a>; các nghiên cứu theo dõi thấy ăn đúng kiểu này đi kèm tử vong thấp hơn<a class="ev ev-high" href="#r-sofi2008" title="Sofi 2008 · Bằng chứng mạnh"></a>.
+
+<h2 id="harvard"><span class="num">33</span>Nghiên cứu Harvard về đời người</h2>
+
+**Nó là gì.** Một trong những nghiên cứu theo dõi dài nhất thế giới: bắt đầu từ cuối thập niên 1930 với hai nhóm đàn ông — sinh viên Harvard và thanh niên các khu nghèo ở Boston — theo dõi suốt cả đời họ<a class="ev ev-mid" href="#r-vaillant2001" title="Vaillant 2001 · Bằng chứng vừa"></a>.
+
+**Ví dụ.** Hai người bạn cùng lớp năm 20 tuổi: người giữ được hôn nhân ấm êm và bạn bè thân thiết thường già đi khoẻ mạnh hơn người giàu hơn nhưng cô độc.
+
+**Bằng chứng.** Cách một người già đi ở tuổi 70–80 được dự báo bằng những gì có từ trước tuổi 50, trong đó có các mối quan hệ<a class="ev ev-mid" href="#r-vaillant2001" title="Vaillant 2001 · Bằng chứng vừa"></a>; ở tuổi già, hôn nhân hạnh phúc giúp tâm trạng hằng ngày ít bị bệnh tật kéo xuống<a class="ev ev-mid" href="#r-waldinger2010" title="Waldinger 2010 · Bằng chứng vừa"></a>. Đây là nghiên cứu theo dõi, không phải thử nghiệm.
+
+<h2 id="healthy-ageing"><span class="num">34</span>Già khoẻ theo WHO</h2>
+
+**Nó là gì.** Tổ chức Y tế Thế giới định nghĩa "già khoẻ" (healthy ageing) không phải là không có bệnh, mà là **giữ được khả năng tự làm những việc mình coi trọng**<a class="ev ev-high" href="#r-who2015" title="WHO 2015 · Bằng chứng mạnh"></a>.
+
+**Ví dụ.** Một cụ ông bị tiểu đường nhưng vẫn tự đi chợ, tự đạp xe sang nhà con, vẫn chơi cờ với hội bạn — theo WHO, cụ đang già khoẻ.
+
+**Bằng chứng.** Một định nghĩa chính thức<a class="ev ev-high" href="#r-who2015" title="WHO 2015 · Bằng chứng mạnh"></a>.
+
+<h2 id="social-connection"><span class="num">35</span>Kết nối xã hội như một yếu tố sức khoẻ</h2>
+
+**Nó là gì.** Năm 2023, Tổng Y sĩ Hoa Kỳ ra hẳn một báo cáo coi **cô đơn và cô lập** là vấn đề sức khoẻ cộng đồng, ngang hàng với hút thuốc hay béo phì<a class="ev ev-high" href="#r-ussurgeongeneral2023" title="US Surgeon General 2023 · Bằng chứng mạnh"></a>.
+
+**Ví dụ.** Ông bà ta nói "bán anh em xa, mua láng giềng gần". Một người sống một mình, không ai hỏi han, ốm một tuần cũng chẳng ai biết — đó là điều báo cáo này lo nhất.
+
+**Cách thử.** Viết tên ba người thân nhất ngoài gia đình ruột thịt, ghi lần gần nhất thật sự nói chuyện; tên nào đã hơn một tháng, tuần này nhắn một tin<span class="ev ev-hyp" title="Suy luận, quy ước thực hành hoặc đề xuất của tài liệu này"></span>.
+
+**Bằng chứng.** Thiếu kết nối làm tăng nguy cơ chết sớm ngang hút tới 15 điếu thuốc mỗi ngày<a class="ev ev-high" href="#r-ussurgeongeneral2023" title="US Surgeon General 2023 · Bằng chứng mạnh"></a>; gộp 148 nghiên cứu, người có quan hệ xã hội mạnh có khả năng sống sót cao hơn khoảng 50%<a class="ev ev-high" href="#r-holtlunstad2010" title="Holt-Lunstad 2010 · Bằng chứng mạnh"></a>.
+
+<div class="recall">
+
+**Câu hỏi nhớ lại**
+
+<details><summary>Ba nhu cầu nền của Self-Determination Theory là gì?</summary><div class="inner">
+
+Tự chủ (được tự chọn), năng lực (thấy mình làm được và tiến bộ), gắn kết (có người thân thiết).
+
+</div></details>
+
+<details><summary>Năm chữ cái của PERMA là gì?</summary><div class="inner">
+
+Positive emotion, Engagement, Relationships, Meaning, Accomplishment.
+
+</div></details>
+
+<details><summary>WOOP gồm bốn bước nào, và vì sao bước thứ ba quan trọng?</summary><div class="inner">
+
+Wish, Outcome, Obstacle, Plan. Bước Obstacle buộc mình nghĩ tới trở ngại trong chính mình — điều mà kiểu chỉ mơ về đích (luật hấp dẫn) bỏ qua.
+
+</div></details>
+
+<details><summary>Ikigai gốc của Nhật khác sơ đồ bốn vòng tròn ở đâu?</summary><div class="inner">
+
+Ikigai gốc là "lẽ sống" — điều khiến mình muốn thức dậy mỗi sáng, có thể rất nhỏ. Sơ đồ bốn vòng tròn (yêu thích, giỏi, thế giới cần, được trả tiền) là một bản chuyển thể trên blog năm 2014.
+
+</div></details>
+
+<details><summary>Life's Essential 8 gồm những gì?</summary><div class="inner">
+
+Bốn thói quen — ăn uống, vận động, không hút thuốc, giấc ngủ — và bốn chỉ số trong cơ thể — cân nặng, mỡ máu, đường huyết, huyết áp.
+
+</div></details>
+
+</div>
+
+<h2 id="sources"><span class="num">C</span>Phụ lục: nguồn</h2>
+
+76 nguồn, xếp theo tên. Chấm màu sau mỗi nguồn cho biết mức chắc chắn của bằng chứng.
+
+<ol class="refs small">
+<li id="r-atjak2015">A-Tjak JGL, Davis ML, Morina N, Powers MB, Smits JAJ, Emmelkamp PMG (2015). A meta-analysis of the efficacy of acceptance and commitment therapy for clinically relevant mental and physical health problems. Psychotherapy and Psychosomatics 84(1):30-36. doi:10.1159/000365764 <a href="https://doi.org/10.1159/000365764" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-ahalifesessential82022">Lloyd-Jones DM, Allen NB, Anderson CAM, et al. (2022). Life&#x27;s Essential 8: Updating and Enhancing the American Heart Association&#x27;s Construct of Cardiovascular Health: A Presidential Advisory From the American Heart Association. Circulation 146(5):e18-e43. doi:10.1161/CIR.0000000000001078 <a href="https://doi.org/10.1161/CIR.0000000000001078" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-biwer2023">Biwer, F., Wiradhany, W., oude Egbrink, M. G. A., &amp; de Bruin, A. B. H. (2023). Understanding effort regulation: Comparing &#x27;Pomodoro&#x27; breaks and self-regulated breaks. British Journal of Educational Psychology 93(S2):353-367. doi:10.1111/bjep.12593 <a href="https://doi.org/10.1111/bjep.12593" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-boostani2026">Boostani A, Mirhoseini M, Momeni A, Vagharseyyedin S, Amouzeshi Z (2026). The effect of online Stoic training on callous-unemotional traits and self-compassion in nursing students: A randomized controlled trial. Nursing Forum 2026:5931249. doi:10.1155/nuf/5931249; Momeni A, Boostani A, Moshtagh M (2026). Evaluating the effectiveness of Stoic teachings on spiritual coping strategies in patients undergoing hemodialysis: A randomized controlled trial. Journal of Health Psychology (online first). doi:10.1177/13591053261456675 <a href="https://doi.org/10.1155/nuf/5931249" target="_blank" rel="noopener">link</a> <span class="ev ev-low" title="Bằng chứng yếu hoặc đang tranh cãi"></span></li>
+<li id="r-brickman1978">Brickman, P., Coates, D., &amp; Janoff-Bulman, R. (1978). Lottery winners and accident victims: Is happiness relative? Journal of Personality and Social Psychology 36(8):917-927. doi:10.1037/0022-3514.36.8.917 <a href="https://doi.org/10.1037/0022-3514.36.8.917" target="_blank" rel="noopener">link</a> <span class="ev ev-low" title="Bằng chứng yếu hoặc đang tranh cãi"></span></li>
+<li id="r-bridgman2019">Bridgman, T., Cummings, S., &amp; Ballard, J. (2019). Who Built Maslow&#x27;s Pyramid? A History of the Creation of Management Studies&#x27; Most Famous Symbol and Its Implications for Management Education. Academy of Management Learning &amp; Education 18(1):81-98. doi:10.5465/amle.2017.0351 <a href="https://doi.org/10.5465/amle.2017.0351" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-brown2020">Brown, N. J. L., &amp; Rohrer, J. M. (2020). Easy as (Happiness) Pie? A Critical Evaluation of a Popular Model of the Determinants of Well-Being. Journal of Happiness Studies 21(4):1285-1301. doi:10.1007/s10902-019-00128-4 ; Sheldon, K. M., &amp; Lyubomirsky, S. (2021). Revisiting the Sustainable Happiness Model and Pie Chart: Can Happiness Be Successfully Pursued? The Journal of Positive Psychology 16(2):145-154. doi:10.1080/17439760.2019.1689421 <a href="https://doi.org/10.1007/s10902-019-00128-4" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-buettner2016">Buettner D, Skemp S (2016). Blue Zones: Lessons From the World&#x27;s Longest Lived. American Journal of Lifestyle Medicine 10(5):318-321. doi:10.1177/1559827616637066 (open full text: PMC6125071) <a href="https://doi.org/10.1177/1559827616637066" target="_blank" rel="noopener">link</a> <span class="ev ev-low" title="Bằng chứng yếu hoặc đang tranh cãi"></span></li>
+<li id="r-butler2016">Butler J, Kern ML (2016). The PERMA-Profiler: A brief multidimensional measure of flourishing. International Journal of Wellbeing 6(3):1-48. doi:10.5502/ijw.v6i3.526 (framework source: Seligman MEP (2011). Flourish. New York: Free Press — book, cited via this paper) <a href="https://doi.org/10.5502/ijw.v6i3.526" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-candalpedreira2025">Candal-Pedreira C, Martin Gisbert L, Teijeiro A, et al. (2025). Blue Zones, an Analysis of Existing Evidence through a Scoping Review. Aging and Disease 17(3):1335-1346 (volume/pages per OpenAlex). doi:10.14336/AD.2025.0461 <a href="https://doi.org/10.14336/AD.2025.0461" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-carney2010">Carney, D. R., Cuddy, A. J. C., &amp; Yap, A. J. (2010). Power Posing: Brief Nonverbal Displays Affect Neuroendocrine Levels and Risk Tolerance. Psychological Science 21(10):1363-1368. doi:10.1177/0956797610383437 <a href="https://doi.org/10.1177/0956797610383437" target="_blank" rel="noopener">link</a> <span class="ev ev-low" title="Bằng chứng yếu hoặc đang tranh cãi"></span></li>
+<li id="r-carney2016">Carney, D. R. (2016). My position on &quot;Power Poses&quot;. https://faculty.haas.berkeley.edu/dana_carney/pdf_My%20position%20on%20power%20poses.pdf ; Gronau, Q. F., Van Erp, S., Heck, D. W., Cesario, J., Jonas, K. J., &amp; Wagenmakers, E.-J. (2017). A Bayesian model-averaged meta-analysis of the power pose effect with informed and default priors: the case of felt power. Comprehensive Results in Social Psychology 2(1):123-138. doi:10.1080/23743603.2017.1326760 <a href="https://doi.org/10.1080/23743603.2017.1326760" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-clear2018">Clear, J. (2018). Atomic Habits: An Easy &amp; Proven Way to Build Good Habits &amp; Break Bad Ones. Avery/Penguin Random House (primary source; https://jamesclear.com/atomic-habits) <span class="ev ev-low" title="Bằng chứng yếu hoặc đang tranh cãi"></span></li>
+<li id="r-covey1989">Covey, S. R. (1989). The 7 Habits of Highly Effective People. Simon &amp; Schuster (primary source of the framework). Related: Jackson, B. (1999). The Goose that Laid the Golden Egg?: A Rhetorical Critique of Stephen Covey and the Effectiveness Movement. Journal of Management Studies 36(3):353-377. doi:10.1111/1467-6486.00140 ; Bergin, C., et al. (2024). Effectiveness of a Social-Emotional Learning Program for Both Teachers and Students. AERA Open 10. doi:10.1177/23328584241281284 <a href="https://doi.org/10.1111/1467-6486.00140" target="_blank" rel="noopener">link</a> <span class="ev ev-low" title="Bằng chứng yếu hoặc đang tranh cãi"></span></li>
+<li id="r-cred2017">Credé, M., Tynan, M. C., &amp; Harms, P. D. (2017). Much ado about grit: A meta-analytic synthesis of the grit literature. Journal of Personality and Social Psychology 113(3):492-511. doi:10.1037/pspp0000102 <a href="https://doi.org/10.1037/pspp0000102" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-curran2019">Curran, T., &amp; Hill, A. P. (2019). Perfectionism is increasing over time: A meta-analysis of birth cohort differences from 1989 to 2016. Psychological Bulletin 145(4):410-429. doi:10.1037/bul0000138 (accepted manuscript: https://researchonline.lse.ac.uk/id/eprint/101352/1/Curran_Hill2018.pdf) <a href="https://doi.org/10.1037/bul0000138" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-curry2018">Curry OS, Rowland LA, Van Lissa CJ, Zlotowitz S, McAlaney J, Whitehouse H (2018). Happy to help? A systematic review and meta-analysis of the effects of performing acts of kindness on the well-being of the actor. Journal of Experimental Social Psychology 76:320-329. doi:10.1016/j.jesp.2018.02.014 <a href="https://doi.org/10.1016/j.jesp.2018.02.014" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-daghlas2021">Daghlas, I., Lane, J. M., Saxena, R., &amp; Vetter, C. (2021). Genetically Proxied Diurnal Preference, Sleep Timing, and Risk of Major Depressive Disorder. JAMA Psychiatry 78(8):903-910. doi:10.1001/jamapsychiatry.2021.0959 <a href="https://doi.org/10.1001/jamapsychiatry.2021.0959" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-davis2016">Davis DE, Choe E, Meyers J, Wade N, Varjas K, Gifford A, Quinn A, Hook JN, et al. (2016). Thankful for the little things: A meta-analysis of gratitude interventions. Journal of Counseling Psychology 63(1):20-31. doi:10.1037/cou0000107 <a href="https://doi.org/10.1037/cou0000107" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-dickens2017">Dickens LR (2017). Using gratitude to promote positive change: A series of meta-analyses investigating the effectiveness of gratitude interventions. Basic and Applied Social Psychology 39(4):193-208. doi:10.1080/01973533.2017.1323638 <a href="https://doi.org/10.1080/01973533.2017.1323638" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-diener1999">Diener E, Suh EM, Lucas RE, Smith HL (1999). Subjective well-being: Three decades of progress. Psychological Bulletin 125(2):276-302. doi:10.1037/0033-2909.125.2.276 <a href="https://doi.org/10.1037/0033-2909.125.2.276" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-diener2006">Diener, E., Lucas, R. E., &amp; Scollon, C. N. (2006). Beyond the hedonic treadmill: Revising the adaptation theory of well-being. American Psychologist 61(4):305-314. doi:10.1037/0003-066X.61.4.305 <a href="https://doi.org/10.1037/0003-066X.61.4.305" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-dixon2023">Dixon, L. J., Hornsey, M. J., &amp; Hartley, N. (2023/2025). &quot;The Secret&quot; to Success? The Psychology of Belief in Manifestation. Personality and Social Psychology Bulletin 51(1):49-65. doi:10.1177/01461672231181162 <a href="https://doi.org/10.1177/01461672231181162" target="_blank" rel="noopener">link</a> <span class="ev ev-low" title="Bằng chứng yếu hoặc đang tranh cãi"></span></li>
+<li id="r-duckworth2007">Duckworth, A. L., Peterson, C., Matthews, M. D., &amp; Kelly, D. R. (2007). Grit: Perseverance and passion for long-term goals. Journal of Personality and Social Psychology 92(6):1087-1101. doi:10.1037/0022-3514.92.6.1087 <a href="https://doi.org/10.1037/0022-3514.92.6.1087" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-elrouby2026">Elrouby, H. Z. E. (2026). Cultural challenges and effectiveness in adapting the Wheel of Life for coaching in the Middle East. International Journal of Evidence Based Coaching and Mentoring 24(1):125-146. doi:10.24384/bgc3-qg13 (DOI resolves via doi.org to the Oxford Brookes repository; record read via the DOAJ API) <a href="https://doi.org/10.24384/bgc3-qg13" target="_blank" rel="noopener">link</a> <span class="ev ev-low" title="Bằng chứng yếu hoặc đang tranh cãi"></span></li>
+<li id="r-estruch2018">Estruch R, Ros E, Salas-Salvado J, et al. (2018). Primary Prevention of Cardiovascular Disease with a Mediterranean Diet Supplemented with Extra-Virgin Olive Oil or Nuts. New England Journal of Medicine 378(25). doi:10.1056/NEJMoa1800389 (republication). Retracted original: Estruch R, et al. (2013). N Engl J Med 368(14):1279-1290. doi:10.1056/NEJMoa1200303 (Crossref/OpenAlex flag: retracted). Retraction notice: N Engl J Med 2018;378(25):2441-2442. doi:10.1056/NEJMc1806491 <a href="https://doi.org/10.1056/NEJMoa1800389" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-facerchilds2019">Facer-Childs, E. R., Middleton, B., Skene, D. J., &amp; Bagshaw, A. P. (2019). Resetting the late timing of &#x27;night owls&#x27; has a positive impact on mental health and performance. Sleep Medicine 60:236-247. doi:10.1016/j.sleep.2019.05.001 <a href="https://doi.org/10.1016/j.sleep.2019.05.001" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-galante2021">Galante J, Friedrich C, Dawson AF, Modrego-Alarcón M, Gebbing P, Delgado-Suárez I, Gupta R, Dean L, et al. (2021). Mindfulness-based programmes for mental health promotion in adults in nonclinical settings: A systematic review and meta-analysis of randomised controlled trials. PLOS Medicine 18(1):e1003481. doi:10.1371/journal.pmed.1003481 <a href="https://doi.org/10.1371/journal.pmed.1003481" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-goldberg2018">Goldberg SB, Tucker RP, Greene PA, Davidson RJ, Wampold BE, Kearney DJ, Simpson TL (2018). Mindfulness-based interventions for psychiatric disorders: A systematic review and meta-analysis. Clinical Psychology Review 59:52-60. doi:10.1016/j.cpr.2017.10.011 <a href="https://doi.org/10.1016/j.cpr.2017.10.011" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-goodman2018">Goodman FR, Disabato DJ, Kashdan TB, Kauffman SB (2018). Measuring well-being: A comparison of subjective well-being and PERMA. The Journal of Positive Psychology 13(4):321-332. doi:10.1080/17439760.2017.1388434 <a href="https://doi.org/10.1080/17439760.2017.1388434" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-heylighen2008">Heylighen, F., &amp; Vidal, C. (2008). Getting Things Done: The Science behind Stress-Free Productivity. Long Range Planning 41(6):585-605. doi:10.1016/j.lrp.2008.09.004 (preprint: http://cogprints.org/6289/1/Heylighen-Vidal-GTD-Science.pdf) <a href="https://doi.org/10.1016/j.lrp.2008.09.004" target="_blank" rel="noopener">link</a> <span class="ev ev-low" title="Bằng chứng yếu hoặc đang tranh cãi"></span></li>
+<li id="r-hofmann2012">Hofmann SG, Asnaani A, Vonk IJJ, Sawyer AT, Fang A (2012). The efficacy of cognitive behavioral therapy: A review of meta-analyses. Cognitive Therapy and Research 36(5):427-440. doi:10.1007/s10608-012-9476-1 (open full text PMC3584580) <a href="https://doi.org/10.1007/s10608-012-9476-1" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-holtlunstad2010">Holt-Lunstad J, Smith TB, Layton JB (2010). Social Relationships and Mortality Risk: A Meta-analytic Review. PLoS Medicine 7(7):e1000316. doi:10.1371/journal.pmed.1000316. And: Holt-Lunstad J, Smith TB, Baker M, Harris T, Stephenson D (2015). Loneliness and Social Isolation as Risk Factors for Mortality. Perspectives on Psychological Science 10(2):227-237. doi:10.1177/1745691614568352 <a href="https://doi.org/10.1371/journal.pmed.1000316" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-kappes2011">Kappes, H. B., &amp; Oettingen, G. (2011). Positive fantasies about idealized futures sap energy. Journal of Experimental Social Psychology 47(4):719-729. doi:10.1016/j.jesp.2011.02.003 (abstract read at https://researchonline.lse.ac.uk/id/eprint/46284) <a href="https://doi.org/10.1016/j.jesp.2011.02.003" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-karl2022">Karl JA, Verhaeghen P, Aikman SN, Solem S, Lassen ER, Fischer R (2022). Misunderstood Stoicism: The negative association between Stoic ideology and well-being. Journal of Happiness Studies 23(7):3531-3547. doi:10.1007/s10902-022-00563-w <a href="https://doi.org/10.1007/s10902-022-00563-w" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-lally2010">Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., &amp; Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology 40(6):998-1009. doi:10.1002/ejsp.674 ; Singh, B., Murphy, A., Maher, C., &amp; Smith, A. E. (2024). Time to Form a Habit: A Systematic Review and Meta-Analysis of Health Behaviour Habit Formation and Its Determinants. Healthcare 12(23):2488. doi:10.3390/healthcare12232488 <a href="https://doi.org/10.1002/ejsp.674" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-li2018">Li Y, Pan A, Wang DD, et al. (2018). Impact of Healthy Lifestyle Factors on Life Expectancies in the US Population. Circulation 138(4):345-355. doi:10.1161/CIRCULATIONAHA.117.032047 <a href="https://doi.org/10.1161/CIRCULATIONAHA.117.032047" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-li2020">Li Y, Schoufour J, Wang DD, et al. (2020). Healthy lifestyle and life expectancy free of cancer, cardiovascular disease, and type 2 diabetes: prospective cohort study. BMJ 368:l6669. doi:10.1136/bmj.l6669 <a href="https://doi.org/10.1136/bmj.l6669" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-limburg2017">Limburg, K., Watson, H. J., Hagger, M. S., &amp; Egan, S. J. (2017). The Relationship Between Perfectionism and Psychopathology: A Meta-Analysis. Journal of Clinical Psychology 73(10):1301-1326. doi:10.1002/jclp.22435 <a href="https://doi.org/10.1002/jclp.22435" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-lucas2007">Lucas, R. E. (2007). Long-term disability is associated with lasting changes in subjective well-being: Evidence from two nationally representative longitudinal studies. Journal of Personality and Social Psychology 92(4):717-730. doi:10.1037/0022-3514.92.4.717 <a href="https://doi.org/10.1037/0022-3514.92.4.717" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-luhmann2012">Luhmann, M., Hofmann, W., Eid, M., &amp; Lucas, R. E. (2012). Subjective well-being and adaptation to life events: A meta-analysis. Journal of Personality and Social Psychology 102(3):592-615. doi:10.1037/a0025948 <a href="https://doi.org/10.1037/a0025948" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-lyubomirsky2005">Lyubomirsky, S., Sheldon, K. M., &amp; Schkade, D. (2005). Pursuing Happiness: The Architecture of Sustainable Change. Review of General Psychology 9(2):111-131. doi:10.1037/1089-2680.9.2.111 <a href="https://doi.org/10.1037/1089-2680.9.2.111" target="_blank" rel="noopener">link</a> <span class="ev ev-low" title="Bằng chứng yếu hoặc đang tranh cãi"></span></li>
+<li id="r-ma2023">Ma H, Wang X, Xue Q, et al. (2023). Cardiovascular Health and Life Expectancy Among Adults in the United States. Circulation 147(15):1137-1146. doi:10.1161/CIRCULATIONAHA.122.062457 <a href="https://doi.org/10.1161/CIRCULATIONAHA.122.062457" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-masicampo2011">Masicampo, E. J., &amp; Baumeister, R. F. (2011). Consider it done! Plan making can eliminate the cognitive effects of unfulfilled goals. Journal of Personality and Social Psychology 101(4):667-683. doi:10.1037/a0024192 <a href="https://doi.org/10.1037/a0024192" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-maslow1943">Maslow, A. H. (1943). A theory of human motivation. Psychological Review 50(4):370-396. doi:10.1037/h0054346 (full text: http://psychclassics.yorku.ca/Maslow/motivation.htm) <a href="https://doi.org/10.1037/h0054346" target="_blank" rel="noopener">link</a> <span class="ev ev-low" title="Bằng chứng yếu hoặc đang tranh cãi"></span></li>
+<li id="r-oettingen2002">Oettingen, G., &amp; Mayer, D. (2002). The motivating function of thinking about the future: Expectations versus fantasies. Journal of Personality and Social Psychology 83(5):1198-1212. doi:10.1037/0022-3514.83.5.1198 <a href="https://doi.org/10.1037/0022-3514.83.5.1198" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-peterson2004">Peterson C, Seligman MEP (2004). Character Strengths and Virtues: A Handbook and Classification. Washington DC: American Psychological Association / New York: Oxford University Press (book; framework source; 24 strengths / 6 virtues confirmed at https://www.viacharacter.org/character-strengths). Tests: McGrath RE (2014). Scale- and item-level factor analyses of the VIA Inventory of Strengths. Assessment 21(1):4-14. doi:10.1177/1073191112450612; Ng V, Cao M, Marsh HW, Tay L, Seligman MEP (2017). The factor structure of the Values in Action Inventory of Strengths (VIA-IS): An item-level ESEM bifactor analysis. Psychological Assessment 29(8):1053-1058. doi:10.1037/pas0000396 <a href="https://doi.org/10.1177/1073191112450612" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-poulain2004">Poulain M, Pes GM, Grasland C, et al. (2004). Identification of a geographic area characterized by extreme longevity in the Sardinia island: the AKEA study. Experimental Gerontology 39(9):1423-1429. doi:10.1016/j.exger.2004.06.016 <a href="https://doi.org/10.1016/j.exger.2004.06.016" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-poulain2013">Poulain M, Herm A, Pes GM (2013 volume; OpenAlex lists 2014). The Blue Zones: areas of exceptional longevity around the world. Vienna Yearbook of Population Research 11:87-108. doi:10.1553/populationyearbook2013s87 <a href="https://doi.org/10.1553/populationyearbook2013s87" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-poulain2024">Poulain M, Herm A (2024). Exceptional longevity in Okinawa: Demographic trends since 1975. Journal of Internal Medicine 295(4):387-399. doi:10.1111/joim.13764 <a href="https://doi.org/10.1111/joim.13764" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-ranehill2015">Ranehill, E., Dreber, A., Johannesson, M., Leiberg, S., Sul, S., &amp; Weber, R. A. (2015). Assessing the Robustness of Power Posing: No Effect on Hormones and Risk Tolerance in a Large Sample of Men and Women. Psychological Science 26(5):653-656. doi:10.1177/0956797614553946 (full text: https://www.zne.uzh.ch/dam/jcr:e5fc4c3c-d50e-4aa9-96ab-4389e426d20d/Psychological%20Science-2015-Ranehill-0956797614553946.pdf) <a href="https://doi.org/10.1177/0956797614553946" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-rees2019">Rees K, Takeda A, Martin N, et al. (2019). Mediterranean-style diet for the primary and secondary prevention of cardiovascular disease. Cochrane Database of Systematic Reviews 2019(3):CD009825. doi:10.1002/14651858.CD009825.pub3 <a href="https://doi.org/10.1002/14651858.CD009825.pub3" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-roenneberg2012">Roenneberg, T., Allebrandt, K. V., Merrow, M., &amp; Vetter, C. (2012). Social Jetlag and Obesity. Current Biology 22(10):939-943. doi:10.1016/j.cub.2012.03.038 <a href="https://doi.org/10.1016/j.cub.2012.03.038" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-ryan2000">Ryan RM, Deci EL (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. American Psychologist 55(1):68-78. doi:10.1037/0003-066X.55.1.68 <a href="https://doi.org/10.1037/0003-066X.55.1.68" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-ryan2001">Ryan RM, Deci EL (2001). On happiness and human potentials: A review of research on hedonic and eudaimonic well-being. Annual Review of Psychology 52:141-166. doi:10.1146/annurev.psych.52.1.141 <a href="https://doi.org/10.1146/annurev.psych.52.1.141" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-ryff1989">Ryff CD (1989). Happiness is everything, or is it? Explorations on the meaning of psychological well-being. Journal of Personality and Social Psychology 57(6):1069-1081. doi:10.1037/0022-3514.57.6.1069 (abstract read from PDF hosted at thefpr.org; OpenAlex&#x27;s stored abstract for this DOI is wrong) <a href="https://doi.org/10.1037/0022-3514.57.6.1069" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-ryff1995">Ryff CD, Keyes CLM (1995). The structure of psychological well-being revisited. Journal of Personality and Social Psychology 69(4):719-727. doi:10.1037/0022-3514.69.4.719 <a href="https://doi.org/10.1037/0022-3514.69.4.719" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-schutte2019">Schutte NS, Malouff JM (2019). The impact of signature character strengths interventions: A meta-analysis. Journal of Happiness Studies 20(4):1179-1196. doi:10.1007/s10902-018-9990-2 (abstract read from RePEc/IDEAS) <a href="https://doi.org/10.1007/s10902-018-9990-2" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-slemp2024">Slemp GR, Field JG, Ryan RM, Forner VW, Van den Broeck A, Lewis KJ (2024). Interpersonal supports for basic psychological needs and their relations with motivation, well-being, and performance: A meta-analysis. Journal of Personality and Social Psychology 127(5):1012-1037. doi:10.1037/pspi0000459 (open access, CC BY 4.0; full text read) <a href="https://doi.org/10.1037/pspi0000459" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-smits2025">Smits, E. J. C., Wenzel, N., &amp; de Bruin, A. (2025). Investigating the Effectiveness of Self-Regulated, Pomodoro, and Flowtime Break-Taking Techniques Among Students. Behavioral Sciences 15(7):861. doi:10.3390/bs15070861 <a href="https://doi.org/10.3390/bs15070861" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-sofi2008">Sofi F, Cesari F, Abbate R, Gensini GF, Casini A (2008). Adherence to Mediterranean diet and health status: meta-analysis. BMJ 337:a1344. doi:10.1136/bmj.a1344 <a href="https://doi.org/10.1136/bmj.a1344" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-sone2008">Sone, T., Nakaya, N., Ohmori, K., Shimazu, T., Higashiguchi, M., Kakizaki, M., Kikuchi, N., Kuriyama, S., et al. (2008). Sense of Life Worth Living (Ikigai) and Mortality in Japan: Ohsaki Study. Psychosomatic Medicine 70(6):709-715. doi:10.1097/psy.0b013e31817e7e64 <a href="https://doi.org/10.1097/psy.0b013e31817e7e64" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-springer2006">Springer KW, Hauser RM (2006). An assessment of the construct validity of Ryff&#x27;s Scales of Psychological Well-Being: Method, mode, and measurement effects. Social Science Research 35(4):1080-1102. doi:10.1016/j.ssresearch.2005.07.004 (author manuscript read from users.ssc.wisc.edu/~hauser); follow-up: Springer KW, Hauser RM, Freese J (2006). Bad news indeed for Ryff&#x27;s six-factor model of well-being. Social Science Research 35(4) (author manuscript read; DOI not verified via Crossref) <a href="https://doi.org/10.1016/j.ssresearch.2005.07.004" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-tay2011">Tay, L., &amp; Diener, E. (2011). Needs and subjective well-being around the world. Journal of Personality and Social Psychology 101(2):354-365. doi:10.1037/a0023779 <a href="https://doi.org/10.1037/a0023779" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-ussurgeongeneral2023">Office of the U.S. Surgeon General (2023). Our Epidemic of Loneliness and Isolation: The U.S. Surgeon General&#x27;s Advisory on the Healing Effects of Social Connection and Community. U.S. Department of Health and Human Services. https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf (read via the Internet Archive copy of that URL, because hhs.gov returned 403; PubMed ID 37792968) <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-vaillant2001">Vaillant GE, Mukamal KJ (2001). Successful Aging. American Journal of Psychiatry 158(6):839-847. doi:10.1176/appi.ajp.158.6.839 <a href="https://doi.org/10.1176/appi.ajp.158.6.839" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-waldinger2010">Waldinger RJ, Schulz MS (2010). What&#x27;s love got to do with it? Social functioning, perceived health, and daily happiness in married octogenarians. Psychology and Aging 25(2):422-431. doi:10.1037/a0019087. And: Waldinger RJ, Cohen S, Schulz MS, Crowell JA (2015; online 2014). Security of Attachment to Spouses in Late Life. Clinical Psychological Science 3(4):516-529. doi:10.1177/2167702614541261 <a href="https://doi.org/10.1037/a0019087" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-wang2021">Wang, G., Wang, Y., &amp; Gai, X. (2021). A Meta-Analysis of the Effects of Mental Contrasting With Implementation Intentions on Goal Attainment. Frontiers in Psychology 12:565202. doi:10.3389/fpsyg.2021.565202 <a href="https://doi.org/10.3389/fpsyg.2021.565202" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-wang2023">Wang X, Ma H, Li X, et al. (2023). Association of Cardiovascular Health With Life Expectancy Free of Cardiovascular Disease, Diabetes, Cancer, and Dementia in UK Adults. JAMA Internal Medicine 183(4):340. doi:10.1001/jamainternmed.2023.0015 <a href="https://doi.org/10.1001/jamainternmed.2023.0015" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-white2019">White, C. A., Uttl, B., &amp; Holder, M. D. (2019). Meta-analyses of positive psychology interventions: The effects are much smaller than previously reported. PLOS ONE 14(5):e0216588. doi:10.1371/journal.pone.0216588 <a href="https://doi.org/10.1371/journal.pone.0216588" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-who2015">World Health Organization (2015). World report on ageing and health. ISBN 9789241565042. https://www.who.int/publications/i/item/9789241565042 ; WHO Q&amp;A &quot;Healthy ageing and functional ability&quot; (26 October 2020). https://www.who.int/news-room/questions-and-answers/item/healthy-ageing-and-functional-ability <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-willcox2007">Willcox BJ, Willcox DC, Todoriki H, et al. (2007). Caloric Restriction, the Traditional Okinawan Diet, and Healthy Aging. Annals of the New York Academy of Sciences 1114:434-455. doi:10.1196/annals.1396.037 (abstract only; full text not accessible). Numbers from: Willcox BJ, Willcox DC (2014; OpenAlex lists 2013 online). Caloric restriction, caloric restriction mimetics, and healthy aging in Okinawa: controversies and clinical implications. Current Opinion in Clinical Nutrition &amp; Metabolic Care 17(1). doi:10.1097/MCO.0000000000000019 (open full text PMC5403510). Mention of the habit: Am J Lifestyle Med (2024) &quot;Lifestyle Medicine and Japan&#x27;s Longevity Miracle&quot;, doi:10.1177/15598276241234012 (PMC11384843). <a href="https://doi.org/10.1196/annals.1396.037" target="_blank" rel="noopener">link</a> <span class="ev ev-mid" title="Bằng chứng vừa"></span></li>
+<li id="r-winn2014">Winn, M. (2014, 14 May). What is your Ikigai? The View Inside Me (blog). https://theviewinside.me/what-is-your-ikigai/ <span class="ev ev-low" title="Bằng chứng yếu hoặc đang tranh cãi"></span></li>
+<li id="r-worldhappinessreport">World Happiness Report, official FAQ, https://worldhappiness.report/faq (read 2026-10-26); data: Gallup World Poll since 2005 <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-zhang2020">Zhang YB, Pan XF, Chen J, et al. (2020; issue 2021). Combined lifestyle factors, all-cause mortality and cardiovascular disease: a systematic review and meta-analysis of prospective cohort studies. Journal of Epidemiology &amp; Community Health 75(1):92-99. doi:10.1136/jech-2020-214050 <a href="https://doi.org/10.1136/jech-2020-214050" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+<li id="r-zhao2023">Zhao J, Stockwell T, Naimi T, Churchill S, Clay J, Sherk A (2023). Association Between Daily Alcohol Intake and Risk of All-Cause Mortality. JAMA Network Open 6(3):e236185. doi:10.1001/jamanetworkopen.2023.6185 <a href="https://doi.org/10.1001/jamanetworkopen.2023.6185" target="_blank" rel="noopener">link</a> <span class="ev ev-high" title="Bằng chứng mạnh"></span></li>
+</ol>
+
+</script>
